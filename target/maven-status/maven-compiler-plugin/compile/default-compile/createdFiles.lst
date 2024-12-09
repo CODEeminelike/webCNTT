@@ -19,6 +19,7 @@ dataModel\EmailSubscriber.class
 servletControllers\OrderController.class
 dataModel\CustomerOrder.class
 servletControllers\ProductImageController.class
+servletControllers\LoginController.class
 dbAdapter\DBReportDownload.class
 dataModel\Cart.class
 appUtil\ValidatorUtil.class

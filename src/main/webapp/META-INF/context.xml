@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/CNTT">
+<Context path="/CNTT"/>
 
-    <!-- Cấu hình DataSource -->
-    <Resource name="jdbc/myDataSource" auth="Container"
-              type="jakarta.sql.DataSource" driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/demo_db"
-              username="root" password="123456"
-              maxTotal="20" maxIdle="10" maxWaitMillis="-1"/>
 
-    <!-- Cấu hình DataSourceRealm -->
-    <Realm className="org.apache.catalina.realm.DataSourceRealm"
-           dataSourceName="jdbc/myDataSource"
-           userTable="admin" userNameCol="user_name" userCredCol="password"
-           userRoleTable="admin_roles" roleNameCol="role_name"/>
-
-</Context>
